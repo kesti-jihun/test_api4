@@ -21,7 +21,7 @@ public class Tc_model_change_recordController {
     public Tc_model_change_recordController(tc_model_change_recordRepository tc_model_change_recordRep) {
         this.tc_model_change_recordRep = tc_model_change_recordRep;
     }
-    //테이블 리스트 가져오기
+    //테이블 리스트 가져오기 
     @GetMapping
     public Iterable<tc_model_change_record> list(){
         return tc_model_change_recordRep.findAll();
